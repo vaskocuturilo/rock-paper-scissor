@@ -3,7 +3,8 @@ const paperButton = document.querySelector('#paper');
 const scissorButton = document.querySelector('#scissor');
 const choiseButtons = document.querySelectorAll('.choiceButtons');
 
-choiseButtons.forEach(button => addEventListener("click"), ()=>{
-    alert(button);
-});
-    
+choiseButtons.forEach(button => {
+button.addEventListener('click', event =>{
+alert(event.target.textContent);
+  })
+});  
